@@ -2,12 +2,12 @@
 #include<unistd.h>
 
 /**
- *main - write whithout printf and puts
+ * main - write whithout printf and puts
  *
  *Description: Write a C program that prints exactly
  *and that piece of art is useful" - Dora Korpar,
  *2015-10-19, followed by a new line, to the standard error
- *Return is 1
+ *Return: is 1
  */
 
 int main(void)
