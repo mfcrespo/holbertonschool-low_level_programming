@@ -7,22 +7,20 @@
  */
 int main(void)
 {
-	unsigned long largestfactor = 0;
-	unsigned long lowestfactor = 2;
-	unsigned long num = 612852475143;
+	long int number = 612852475143;
+	long int factor = 2;
 
-	while (num != 1)
+	while (factor <= number)
 	{
-		lowestfactor = 2;
-		while ((num % lowestfactor) != 0)
-			lowestfactor++;
-
-		num = num / lowestfactor;
-
-		if (lowestfactor > largestfactor)
-			largestfactor = lowestfactor;
+		if (number % factor == 0)
+		{
+			number = number / factor;
+		}
+		else
+		{
+			factor++;
+		}
 	}
-
-	printf("%lu\n", largestfactor);
+	printf("%lu\n", factor);
 	return (0);
 }
