@@ -14,4 +14,6 @@ int value(int n, int i);
 int get_prime(int n, int counter);
 int strlength(char *s);
 int iteratepalindrome(char *s, char *start, int counter);
+int wildcmp(char *s1, char *s2);
+int asterisks(char *s1, char *s2, char *origin);
 #endif
