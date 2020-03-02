@@ -1,6 +1,6 @@
-#Include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  *main - Write a program that adds positive numbers
  *@argc: number of command line arguments
@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int add = 0, co = 1;
+
 	while (co < argc)
 	{
 		int co1 = 0;
