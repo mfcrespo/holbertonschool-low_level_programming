@@ -9,4 +9,6 @@ void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 int  _strlen(char *str);
 char *_concat(char *concatenate, char *s1, char *s2);
+char *writeconcat(char *concatstr, int ac, char **av);
+int findlength(int ac, char **av);
 #endif
