@@ -13,9 +13,9 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *str;
+	unsigned int counter = 0, counter2 = 0;
 	unsigned int length1, length2, total;
-	unsigned int counts1, counts2;
+	char *concat;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -28,31 +28,31 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		total = length1 + n + 1;
 
-	str = malloc(total * sizeof(char));
-	if (str == NULL)
+	concat = malloc(sizeof(char) * total);
+	if (concat == NULL)
 		return (NULL);
 
-	while (*(s1 + counts1) != '\0')
+	while (*(s1 + counter) != '\0')
 	{
-		*(str + counts1) = *(s1 + counts1);
-		counts1++;
+		*(concat + counter) = *(s1 + counter);
+		counter++;
 	}
 	if (n >= length2)
-		while (*(s2 + counts2) != '\0')
+		while (*(s2 + counter2) != '\0')
 		{
-			*(str + counts1) = *(s2 + counts2);
-			counts1++;
-			counts2++;
+			*(concat + counter) = *(s2 + counter2);
+			counter++;
+			counter2++;
 		}
 	else
-		while (counts2 < n)
+		while (counter2 < n)
 		{
-			*(str + counts1) = *(s2 + counts2);
-			counts1++;
-			counts2++;
+			*(concat + counter) = *(s2 + counter2);
+			counter++;
+			counter2++;
 		}
-	*(str + counts1) = '\0';
-	return (str);
+	*(concat + counter) = '\0';
+	return (concat);
 }
 
 /**
@@ -63,13 +63,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  */
 unsigned int _strlen(char *str)
 {
-	int counts1 = 0;
-	int length1 = 0;
+	int counter = 0;
+	int length = 0;
 
-	while (*(str + counts1) != '\0')
+	while (*(str + counter) != '\0')
 	{
-		length1++;
-		counts1++;
+		length++;
+		counter++;
 	}
-	return (length1);
+	return (length);
 }
