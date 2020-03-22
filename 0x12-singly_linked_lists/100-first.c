@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include "lists.h"
+
 /**
- *printphrase - prints some text before main function is executed
- *
- *Return: void
+ * printphrase - function print befero main
  */
 
-void printphrase(void) __attribute__((constructor))
+void printphrase(void)
 {
-	printf("You're beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n"
+	       "I bore my house upon my back!\n");
 }
-
