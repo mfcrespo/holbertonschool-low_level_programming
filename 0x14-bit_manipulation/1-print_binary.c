@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 	int start = 0;
 	unsigned long int biggest;
 
-	biggest = biggest << ((sizeof(unsigned long int) * 8) - 1);
+	biggest = 1UL << ((sizeof(unsigned long int) * 8) - 1);
 	while (i < sizeof(unsigned long int) * 8)
 	{
 		if ((n & biggest) != 0)
