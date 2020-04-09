@@ -17,10 +17,10 @@ int _atoi(char *s)
 	{
 		if (s[i] > '9' || s[i] < '0')
 			return (-1);
+
+		else
+			number = number * 10 + (s[i] - '0');
 	i++;
 	}
-	while (s[i] != '\0')
-		number = number * 10 + (s[i] - '0');
-	i++;
 	return (number);
 }
