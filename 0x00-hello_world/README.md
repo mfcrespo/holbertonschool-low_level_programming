@@ -29,3 +29,19 @@ TASK:
 5. Hello, printf: Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
 6. Size is not grandeur, and territory does not make a nation: Write a C program that prints the size of various types on the computer it is compiled and run on.
 7. What happens when you type gcc main.c: Write a blog post that explains all the steps of compilation. Use command lines and examples to illustrate.
+
+### Files:
+| File  | Description |
+| :-------: | :-------:  |
+| `simple_shell.h` | Libraries, declarations. |
+| `builtin.c` | Search and init built-ins |
+| `errormessages.c` | Messages Handlers |
+| `execute.c` | Create and execute processes |
+| `freeall.c` | Free memory |
+| `getenv.c` | Get environment variables |
+| `pathappend.c` | Append program to its path |
+| `searchinit.c` | Execute local programs, redirect commands |
+| `searchpathfile.c` | Search and validate file paths |
+| `splitarguments.c` | Count arguments and breaks them into tokens |
+| `str_handlers.c` | String Handlers Funcs |
+| `hsh.c` | Main Function |
