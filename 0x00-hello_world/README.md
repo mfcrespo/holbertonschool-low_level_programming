@@ -46,7 +46,13 @@ TASK:
 | `str_handlers.c` | String Handlers Funcs |
 | `hsh.c` | Main Function |
 
-| Nombre     | Símbolo |
-| ---      | ---       |
-| Comilla simple | `         |
+| Comando | Descripción |
+| --- | --- |
+| `git status` | Enumera todos los archivos *nuevos o modificados* |
+| `git diff` | Muestra las diferencias de archivo que **no han sido** preparadas |
+
+
+| File     | Description |
+| :---:      | :---:       |
+| 'simple_shell.h' | Libraries, declarations.         |
 | Barra vertical | \|        |
