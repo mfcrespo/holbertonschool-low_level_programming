@@ -45,3 +45,8 @@ TASK:
 | `splitarguments.c` | Count arguments and breaks them into tokens |
 | `str_handlers.c` | String Handlers Funcs |
 | `hsh.c` | Main Function |
+
+| Nombre     | Símbolo |
+| ---      | ---       |
+| Comilla simple | `         |
+| Barra vertical | \|        |
