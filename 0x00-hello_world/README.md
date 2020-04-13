@@ -30,7 +30,7 @@ TASK:
 6. Size is not grandeur, and territory does not make a nation: Write a C program that prints the size of various types on the computer it is compiled and run on.
 7. What happens when you type gcc main.c: Write a blog post that explains all the steps of compilation. Use command lines and examples to illustrate.
 
-### Files:
+### Files2:
 | File  | Description |
 | :-------: | :-------:  |
 | `simple_shell.h` | Libraries, declarations. |
