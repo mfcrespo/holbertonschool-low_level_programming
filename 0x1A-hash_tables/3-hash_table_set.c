@@ -1,9 +1,10 @@
 #include "hash_tables.h"
 /**
- *hash_table_set - adds an element to the hash table
- *@ht: the hash table to add or update to
- *@key: the key string
- *@value: the value associated with the key
+ *hash_table_set - Write a function that adds an element to the hash table
+ *@ht: hash table you want to add or update the key/value to
+ *@key: is the key. key can not be an empty string
+ *@value: is the value associated with the key.
+ *value must be duplicated. value can be an empty string
  *
  *Return: 1 if successful, 0 otherwise
  */
