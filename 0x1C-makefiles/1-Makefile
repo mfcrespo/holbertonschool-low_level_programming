@@ -1,6 +1,6 @@
 CC=gcc
 SRC=holberton.c main.c
 
-all: holberton
+all: ${SRC}
 #holberton: holberton.c main.c m.h
 	${CC} ${SRC} -o holberton
